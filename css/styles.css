@@ -154,6 +154,8 @@ body {
 }
 
 .header-contact .contact {
+  display: flex;
+  align-items: center;
   color: var(--primery-text-color);
 
   font-weight: 500;
@@ -234,6 +236,18 @@ body {
 .aspect {
   display: flex;
 }
+
+.aspect-conteiner-icon {
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--teem-background);
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+}
+
 .aspect > .item {
   width: 270px;
 }
@@ -310,6 +324,7 @@ body {
 
 .work-name {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .name-title {
@@ -330,16 +345,17 @@ body {
 
 .social-list {
   margin-top: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-bottom: 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .social-item {
   width: 44px;
   height: 44px;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .aspect-link {
@@ -375,16 +391,16 @@ body {
 
 .company-item {
   margin-right: 30px;
-  border: 1px solid var(--icon-color);
-  border-radius: 4px;
 }
 
-.company-item:hover,
-.company-item:focus {
+.compani-link:hover,
+.compani-link:focus {
   border-color: var(--accent-color);
 }
 
 .compani-link {
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
   padding: 16px 32px;
   display: block;
   width: 100%;
@@ -395,8 +411,8 @@ body {
   fill: var(--icon-color);
 }
 
-.company-item:hover .company-icon,
-.company-item:focus .company-icon {
+.compani-link:hover .company-icon,
+.compani-link:focus .company-icon {
   fill: var(--accent-color);
 }
 
@@ -547,9 +563,8 @@ body {
   color: var(--main-white-color);
 }
 
-.portfolio-buttons > .item:hover,
-.portfolio-buttons > .item:focus {
-  border-radius: 4px;
+.portfolio-buttons > .item > .button:hover,
+.portfolio-buttons > .item > .button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -569,9 +584,8 @@ body {
   margin-left: 30px;
 }
 
-.portfolio-photo > .item:hover,
-.portfolio-photo > .item:focus {
-  border: 1px solid #eeeeee;
+.link-portfolio:hover,
+.link-portfolio:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
